@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+Theme Name: misfits5_theme
+Theme URI: http://misfits5.com/
+Author: misfits5
+Author URI:  http://misfits5.com/
+Description: this is original Wordpress theme ver.1.00/20150701
+*/
+
+/* ナビゲーションの高さを変更 */
+header nav,
+header nav li {
+	height: 86px;
+	line-height:86px;
+}
+
+/* トップナビゲーションのドロップダウンリストの表示アイコンの調整 */
+.dropdown-button i {
+	padding-top:12px;
+}
+
+/* ドロップダウン内リストの調整 */
+.dropdown-content li {
+	line-height: 54px;
+}
