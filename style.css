@@ -10,16 +10,16 @@ Description: this is original Wordpress theme ver.1.00/20150701
 /* ナビゲーションの高さを変更 */
 header nav,
 header nav li {
-	height: 86px;
-	line-height:86px;
+  height: 86px;
+  line-height:86px;
 }
 
-/* トップナビゲーションのドロップダウンリストの表示アイコンの調整 */
+/* トップナビゲーションのドロップダウンリストの表示アイコンの位置調整 */
 .dropdown-button i {
-	padding-top:12px;
+  padding-top:12px;
 }
 
-/* ドロップダウン内リストの調整 */
+/* ドロップダウン内リストの高さ調整 */
 .dropdown-content li {
-	line-height: 54px;
+  line-height: 54px;
 }

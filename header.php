@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 
-<head>
-
-<title>
-<?php if ( is_home() || is_front_page() ) : ?>
-<?php bloginfo('name'); ?>
-<?php else : ?>
-<?php the_title(); ?>
-|
-<?php bloginfo('name'); ?>
-<?php endif; ?>
-</title>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -43,35 +31,37 @@
 
       <!-- スマホメニュー -->
       <ul id="slide-out" class="side-nav">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
+        <li><a href="#!">HOME</a></li>
+        <li><a href="#!">ABOUT</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li> <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <li> <a class="collapsible-header">カテゴリー<i class="mdi-navigation-arrow-drop-down"></i></a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="#!">First</a></li>
-                  <li><a href="#!">Second</a></li>
-                  <li><a href="#!">Third</a></li>
-                  <li><a href="#!">Fourth</a></li>
+                  <li><a href="#!">ゲーム</a></li>
+                  <li><a href="#!">映画</a></li>
+                  <li><a href="#!">海外ドラマ</a></li>
+                  <li><a href="#!">日々</a></li>
                 </ul>
               </div>
             </li>
           </ul>
         </li>
+        <li><a href="#!">CONTACT</a></li>
       </ul>
 
       <!-- デスクトップメニュー -->
       <ul class="right hide-on-med-and-down">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+        <li><a href="#!">HOME</a></li>
+        <li><a href="#!">ABOUT</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">カテゴリー<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="#!">First</a></li>
-          <li><a href="#!">Second</a></li>
-          <li><a href="#!">Third</a></li>
-          <li><a href="#!">Fourth</a></li>
+          <li><a href="#!">ゲーム</a></li>
+          <li><a href="#!">映画</a></li>
+          <li><a href="#!">海外ドラマ</a></li>
+          <li><a href="#!">日々</a></li>
         </ul>
+        <li><a href="#!">CONTACT</a></li>
       </ul>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> </div>
   </nav>

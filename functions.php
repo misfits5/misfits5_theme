@@ -1,6 +1,12 @@
 <?php
 //ウィジェット
 
+//titleタグ表記
+function my_setup_theme() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'my_setup_theme' );
+
 //コメント欄のデフォルト文言削除
 add_filter('comment_form_default_fields', 'mytheme_remove_url');
 function mytheme_remove_url($arg) {

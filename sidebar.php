@@ -1,4 +1,4 @@
-<div class="sidebar col l3 m3 s12">
+<div class="sidebar col l4 hide-on-med-and-down">
 
 <h2>サイドバー</h2>
 
