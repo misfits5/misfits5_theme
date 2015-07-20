@@ -38,7 +38,7 @@ remove_action('wp_head', 'feed_links_extra', 3);
 
 //アイキャッチ
 add_theme_support( 'post-thumbnails', array( 'post' ) );
-set_post_thumbnail_size( 210, 140, true );
+set_post_thumbnail_size( 500, 300, true );
 //スマホサイト用のアイキャッチ105x70サイズ
 add_image_size( 'spicatch', 105, 70, true );
 
