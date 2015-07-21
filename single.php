@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-<div class="row main-wrapper container">
-<?php get_sidebar(); ?>
+<div class="row container">
 
-<div class="single-post col l8 m12 s12">
+<div class="col l12 m12 s12">
 
   <div class="contents-box">
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
@@ -27,6 +26,8 @@ echo $cat->cat_name;
       <div class="hide-on-large-only"> <?php the_tags('<ul><li>','</li><li>','</li></ul>');?></div>
 
     </header><!-- single-header end -->
+
+<?php get_sidebar(); ?>
 
     <div class="single-post">
       <?php the_content(''); ?>

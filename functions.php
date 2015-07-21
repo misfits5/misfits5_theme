@@ -37,10 +37,8 @@ remove_action('wp_head', 'feed_links_extra', 3);
 
 
 //アイキャッチ
-add_theme_support( 'post-thumbnails', array( 'post' ) );
-set_post_thumbnail_size( 500, 300, true );
-//スマホサイト用のアイキャッチ105x70サイズ
-add_image_size( 'spicatch', 105, 70, true );
+add_theme_support( 'post-thumbnails' );
+
 
 //現在のページ数の取得
 function show_page_number() {
@@ -70,3 +68,9 @@ function SocialButtonVertical()
 <li><a href="#" onclick="Evernote.doClip({}); return false;"><img src="http://static.evernote.com/article-clipper-vert.png" alt="Clip to Evernote" /></a></li>
 </ul>
 <?php }
+
+//最初の投稿だけ表示を変えるための関数
+function is_first_post(){
+    global $wp_query;
+    return ($wp_query->current_post === 0);
+}
